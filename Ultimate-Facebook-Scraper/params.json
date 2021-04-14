@@ -1,0 +1,273 @@
+{
+  "Friends": [{
+    "scan_list": [
+      "All Friends",
+      "Following",
+      "Followers",
+      "College",
+      "Current City",
+      "Hometown"
+    ],
+    "section": [
+      "/friends_all",
+      "/following",
+      "/followers",
+      "/friends_college",
+      "/friends_current_city",
+      "/friends_hometown"
+    ],
+    "elements_path": [
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div/div/div/div/div/div[3]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div/div/div/div/div/div[3]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div/div/div/div/div/div[3]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div/div/div/div/div/div[3]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div/div/div/div/div/div[3]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div/div/div/div/div/div[3]"
+    ],
+    "file_names": [
+      "All Friends.json",
+      "Following.json",
+      "Followers.json",
+      "College Friends.json",
+      "Current City Friends.json",
+      "Hometown Friends.json"
+    ],
+    "save_status": 0
+  },
+    {"scan_list": [
+      "All Friends",
+      "Following",
+      "Followers",
+      "College",
+      "Current City",
+      "Hometown"
+    ],
+    "section": [
+      "&sk=friends_all",
+      "&sk=following",
+      "&sk=followers",
+      "&sk=friends_college",
+      "&sk=friends_current_city",
+      "&sk=friends_hometown"
+    ],
+    "elements_path": [
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div/div/div/div/div/div[3]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div/div/div/div/div/div[3]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div/div/div/div/div/div[3]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div/div/div/div/div/div[3]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div/div/div/div/div/div[3]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div/div/div/div/div/div[3]"
+    ],
+    "file_names": [
+      "All Friends.json",
+      "Following.json",
+      "Followers.json",
+      "College Friends.json",
+      "Current City Friends.json",
+      "Hometown Friends.json"
+    ],
+    "save_status": 0
+  }],
+  "Members": {
+    "scan_list": [
+      "All"
+    ],
+    "section": [
+      "/members"
+    ],
+    "elements_path": [
+      "//*[contains(@id,'pagelet_group_members')][1]/div[2]/div/ul/li/div/a"
+    ],
+    "file_names": [
+      "All Members.txt"
+    ],
+    "save_status": 0
+  },
+  "Photos": [{
+    "scan_list": [
+      "Photos all",
+      "Photos of"
+    ],
+    "section": [
+      "/photos_all",
+      "/photos_of"
+    ],
+     "elements_path": [
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[3]/div",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[3]/div"
+    ],
+    "file_names": [
+      "Uploaded Photos.txt",
+      "Tagged Photos.txt"
+    ],
+    "save_status": 1
+  },
+  {
+    "scan_list": [
+      "Photos all",
+      "Photos of"
+    ],
+    "section": [
+      "&sk=photos_all",
+      "&sk=photos_of"
+    ],
+    "elements_path": [
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[3]/div",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[3]/div"
+    ],
+    "file_names": [
+      "Uploaded Photos.txt",
+      "Tagged Photos.txt"
+    ],
+    "save_status": 1
+  }],
+  "Videos": [{
+    "scan_list": [
+      "'s Videos"
+    ],
+    "section": [
+      "/videos_by"
+    ],
+    "elements_path": [
+      "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul",
+      "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul"
+    ],
+    "file_names": [
+      "Uploaded Videos.txt",
+      "Tagged Videos.txt"
+    ],
+    "save_status": 2
+  },
+  {
+    "scan_list": [
+      "'s Videos"
+    ],
+    "section": [
+      "&sk=videos_by"
+    ],
+    "elements_path": [
+      "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul",
+      "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul"
+    ],
+    "file_names": [
+      "Uploaded Videos.txt",
+      "Tagged Videos.txt"
+    ],
+    "save_status": 2
+  }],
+  "About": [{
+    "scan_list": [
+      "overview",
+      "education",
+      "living",
+      "contact-info",
+      "relationship",
+      "bio",
+      "year-overviews"
+    ],
+    "section": [
+      "/about_overview",
+      "/about_work_and_education",
+      "/about_places",
+      "/about_contact_and_basic_info",
+      "/about_family_and_relationships",
+      "/about_details",
+      "/about_life_events"
+    ],
+    "elements_path": [
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]"
+    ],
+    "file_names": [
+      "Overview.json",
+      "Work and Education.json",
+      "Places Lived.json",
+      "Contact and Basic Info.json",
+      "Family and Relationships.json",
+      "Details About.json",
+      "Life Events.json"
+    ],
+    "save_status": 3
+  },
+  {
+    "scan_list": [
+      "overview",
+      "education",
+      "living",
+      "contact-info",
+      "relationship",
+      "bio",
+      "year-overviews"
+    ],
+    "section": [
+      "&sk=about_overview",
+      "&sk=about_work_and_education",
+      "&sk=about_places",
+      "&sk=about_contact_and_basic_info",
+      "&sk=about_family_and_relationships",
+      "&sk=about_details",
+      "&sk=about_life_events"
+    ],
+    "elements_path": [
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]",
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]"
+    ],
+    "file_names": [
+      "Overview.json",
+      "Work and Education.json",
+      "Places Lived.json",
+      "Contact and Basic Info.json",
+      "Family and Relationships.json",
+      "Details About.json",
+      "Life Events.json"
+    ],
+    "save_status": 3
+  }],
+  "Posts": [{
+    "scan_list": [],
+    "section": [],
+    "elements_path": [
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div[2]/div/div[2]/div[3]"
+    ],
+    "file_names": [
+      "Posts.json"
+    ],
+    "save_status": 4
+  },
+  {
+    "scan_list": [],
+    "section": [],
+    "elements_path": [
+      "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div[2]/div/div[2]/div[3]"
+    ],
+    "file_names": [
+      "Posts.json"
+    ],
+    "save_status": 4
+  }],
+  "GroupPhotos": {
+    "scan_list": [
+      "Photos"
+    ],
+    "section": [
+      "media/photos"
+    ],
+    "elements_path": [
+      "//*[@id=\"mount_0_0\"]/div/div[1]/div[1]/div[3]/div/div/div[1]/div[1]/div[4]/div/div/div/div/div/div[2]"
+    ],
+    "file_names": [
+      "Photos.txt"
+    ],
+    "save_status": 5
+  }
+}
