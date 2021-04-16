@@ -1,5 +1,6 @@
 import argparse
 import os
+import re
 import sys
 from calendar import calendar
 import random
@@ -66,7 +67,7 @@ def scroll(total_scrolls, driver, selectors, scroll_time):
             break
 
     return
-def scroll_post(total_scrolls,driver):
+def scroll_post(total_scrolls,driver, listID):
     # mouse.scroll(0, -500)
     current_scrolls = 0
     list_link_post_old = []
@@ -76,14 +77,15 @@ def scroll_post(total_scrolls,driver):
         sleep(1)
         for i in link:
             if (i not in list_link_post_old):
+                list_link_post_old.append(i)
                 hover = ActionChains(driver).move_to_element(i)
                 hover.perform()
                 link_post = i.get_attribute('href')
-                # link_post = link_post.split("?")[0]
+                id = re.search('fbid=(.*)&id=', link_post).group(1)
+                if(id in listID):
+                    continue
                 list_link_post.append(link_post)
-                list_link_post_old.append(i)
         current_scrolls += 1
-    print(current_scrolls)
     return list_link_post
 
 # -----------------------------------------------------------------------------

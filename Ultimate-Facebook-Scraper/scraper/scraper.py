@@ -44,7 +44,7 @@ handler.setFormatter(formatter)
 logger.addHandler(handler)
 
 myclient = pymongo.MongoClient("mongodb://127.0.0.1:27017/")
-mydb = myclient["data_fb"]
+mydb = myclient["data_crawlFB"]
 
 with open("../credentials.yaml", "r") as ymlfile:
     cfg = yaml.safe_load(stream=ymlfile)
@@ -1113,7 +1113,16 @@ def scrape_data(url, scan_list, section, elements_path, save_status, file_names,
                 #     continue
                 A = 1
             if(save_status == 4):
-                link = utils.scroll_post(total_scrolls, driver)
+                listID = list()
+                mycol = mydb[collection_name]
+                documents = mycol.find()
+                for x in documents:
+                    if ('Posts' in x.keys()):
+                        list_post = x.get('Posts')
+                        for post in list_post:
+                            id_post = post.get('post_id')
+                            listID.append(id_post)
+                link = utils.scroll_post(total_scrolls, driver, listID)
                 data = link
             elif save_status != 3:
                 utils.scroll(total_scrolls, driver, selectors, scroll_time)
@@ -1153,7 +1162,12 @@ def scrape_data(url, scan_list, section, elements_path, save_status, file_names,
                     i = i + 1
                     if ('Posts' in item.keys()):
                         id = item.get('_id')
-                        collection_currency.update_one({'_id': id}, {'$set': res})
+                        count = len(item.get('Posts'))
+                        index = 0
+                        for i in dataColect:
+                            mycol.update({'_id': id}, {'$set': {"Posts." + str(count + index): i}})
+                            index += 1
+                        # collection_currency.update_one({'_id': id}, {'$set': res})
                         break
                     elif (i == doccount):
                         collection_currency.insert_one(res)
@@ -1656,10 +1670,10 @@ def scrap_secursion(urls):
                     elif (i == doccount):
                         mycol.insert_one(arrUser_Id)
             else:
-                arrUser_Id['UserID'] = account_id
+                arrUser_Id['UserID'] = account
                 mycol.insert_one(arrUser_Id)
         except:
-            print("Something went wrong while saving")
+            print("co loi trong qua trinh luu ID va Ten")
         link_type = utils.identify_url(driver.current_url)
         if link_type == 0:
             scrap_profile()
@@ -1766,7 +1780,7 @@ def scraper(**kwargs):
 # -------------------------------------------------------------
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-db = myclient["data_fb"]
+db = myclient["data_crawlFB"]
 link_root = "https://facebook.com/"
 
 app=Flask(__name__)
